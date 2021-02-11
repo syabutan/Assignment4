@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Thank you for information for " + Model.SuggestedRestaurant + "!";
+
+}
+
+<!--Confirmation page which is displayed after the user input information-->
+<div class="text-center">
+    <p>Your suggestion is registered successfully!</p>
+</div>
+<br />
+<br />
+<!--Link to the movie list-->
+<div class="text-center">
+    Click <a asp-action="List">here</a> to see suggestions.
+</div>

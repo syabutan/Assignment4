@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Your Favorite Restaurant";
+}
+
+@model Assignment4.Models.SuggestInfo 
+
+
+<!--User input form-->
+<form asp-action="Suggestion" method="post" class="m-2">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="UserName">Your Name</label>
+        <input asp-for="UserName" class="form-control" />
+        <br />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SuggestedRestaurant">Restaurant Name</label>
+        <input asp-for="SuggestedRestaurant" class="form-control" />
+        <br />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SuggestedFavoriteDish">Favorite Dish</label>
+        <input asp-for="SuggestedFavoriteDish" class="form-control" />
+        <br />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SuggestedPhone">Restaurant Phone#</label>
+        <input asp-for="SuggestedPhone" class="form-control" />
+        <br />
+    </div>
+    <button type="submit" class="btn btn-sm btn-outline-success">Submit your seggestion</button>
+
+
+</form> 

@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Welcome!";
+}
+
+@model IEnumerable<string>
+
+<!--Show top 5 restaurants-->
+<body>
+    <ul>
+        @foreach (string i in Model)
+        {
+            <li class="list-group-item">@i</li>
+        }
+    </ul>
+</body> 
