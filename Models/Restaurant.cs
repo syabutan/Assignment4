@@ -14,16 +14,17 @@ namespace Assignment4.Models
             RestaurantRanking = rank;
         }
         //If FavoriteDish is null, it displays "It's all tasty!"
-        public string FavoriteDish { get; set; } = "It's all tasty!";
+        public string? FavoriteDish { get; set; } = "It's all tasty!";
         //If Link is null, it displays "Coming soon."
-        public string Link { get; set; } = "Coming soon.";
-        public int? RestaurantRanking { get; }
+        public string? Link { get; set; } = "Coming soon.";
+        public int RestaurantRanking { get; }
         [Required]
         public string Name { get; set; }
         [Required]
         public string Address { get; set; }
         [Phone]
         public string Phone { get; set; }
+        public int Number { get; set; }
 
         //List of top 5 restaurant
         public static Restaurant[] GetRestaurants()
@@ -34,7 +35,7 @@ namespace Assignment4.Models
                 FavoriteDish = "Bbq Chicken & Pineapple",
                 Address = "111 E 800 N",
                 Phone = "(801) 374-8800",
-                Link = "http://www.brickovenprovo.net/"
+                Link = "http://www.brickovenprovo.net/",
             };
 
             Restaurant r2 = new Restaurant(2)
